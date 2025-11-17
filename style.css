@@ -97,6 +97,44 @@ input:focus, select:focus {
     transform: translateY(0);
 }
 
+.mini-game-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px dashed #c3dafe;
+    border-radius: 12px;
+    background: #f7fafc;
+}
+
+.mini-game-banner h3 {
+    color: #2d3748;
+    margin-bottom: 6px;
+}
+
+.mini-game-banner p {
+    color: #4a5568;
+    font-size: 14px;
+}
+
+.mini-game-btn {
+    padding: 12px 18px;
+    background: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mini-game-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(43, 108, 176, 0.3);
+}
+
 /* Modal de Higienização */
 .modal {
     display: none;
@@ -124,6 +162,10 @@ input:focus, select:focus {
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     animation: slideDown 0.4s;
+}
+
+.modal-content.wide {
+    max-width: 800px;
 }
 
 @keyframes slideDown {
@@ -155,6 +197,58 @@ input:focus, select:focus {
     text-align: center;
     margin-bottom: 30px;
     line-height: 1.6;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #4a5568;
+}
+
+.mini-game-link {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mini-game-link a {
+    color: #2b6cb0;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mini-game-link a:hover {
+    text-decoration: underline;
+}
+
+.question-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    display: grid;
+    gap: 12px;
+}
+
+.question-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+.question-text {
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 6px;
+}
+
+.question-options {
+    color: #4a5568;
+    font-size: 14px;
 }
 
 .modal-buttons {

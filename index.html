@@ -16,6 +16,14 @@
         </div>
 
         <div class="main-content">
+            <div class="mini-game-banner">
+                <div>
+                    <h3>🎮 Minijogo: "Você lava as mãos?"</h3>
+                    <p>Revise 30 situações clínicas e fortaleça o hábito de higienização.</p>
+                </div>
+                <button class="mini-game-btn" onclick="abrirMiniJogoModal()">Abrir minijogo</button>
+            </div>
+
             <!-- Seção de Login -->
             <div class="login-section" id="loginSection">
                 <div class="form-group">
@@ -97,6 +105,144 @@
             <div class="modal-buttons">
                 <button class="btn-yes" onclick="confirmarHigienizacao(true)">✓ Sim, higienizei</button>
                 <button class="btn-no" onclick="confirmarHigienizacao(false)">✗ Não higienizei</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal do Minijogo -->
+    <div class="modal" id="miniGameModal">
+        <div class="modal-content wide">
+            <button class="modal-close" aria-label="Fechar" onclick="fecharMiniJogoModal()">×</button>
+            <div class="modal-icon">🎮</div>
+            <h2>Minijogo – "Você lava as mãos?"</h2>
+            <p>
+                Explore 30 situações clínicas e escolha quando higienizar as mãos. Acesse o minijogo completo
+                no link abaixo para praticar com feedback imediato.
+            </p>
+            <p class="mini-game-link">
+                <a href="https://example.com/minijogo" target="_blank" rel="noopener noreferrer">Abrir minijogo em nova aba</a>
+            </p>
+            <div class="question-list" aria-label="Perguntas do minijogo">
+                <div class="question-item">
+                    <div class="question-text">1️⃣ Você entra no quarto do paciente João para verificar a temperatura.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes do contato. ✅ | <strong>B)</strong> Não, é só medir. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">2️⃣ Após ajudar a paciente Maria a ir ao banheiro, o que faz?</div>
+                    <div class="question-options"><strong>A)</strong> Lavo as mãos depois do contato. ✅ | <strong>B)</strong> Não é necessário, usei luvas. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">3️⃣ Vai preparar uma medicação intravenosa no posto de enfermagem.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de manipular medicamentos. ✅ | <strong>B)</strong> Não, estou com as mãos limpas. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">4️⃣ Antes de calçar as luvas para um curativo estéril.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de colocar as luvas. ✅ | <strong>B)</strong> Não, já vou proteger as mãos. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">5️⃣ Ao retirar as luvas após o curativo.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, depois de retirar as luvas. ✅ | <strong>B)</strong> Não, já usei proteção. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">6️⃣ Antes de tocar no paciente para aferir a pressão arterial.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes do contato. ✅ | <strong>B)</strong> Não, não há risco. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">7️⃣ Após ajustar o cateter urinário do paciente.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, depois do contato com fluidos corporais. ✅ | <strong>B)</strong> Não, usei luvas. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">8️⃣ Vai colocar o tabuleiro de refeições para o paciente.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes do contato com objetos próximos ao doente. ✅ | <strong>B)</strong> Não, não encostarei nele. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">9️⃣ Ao sair do quarto de isolamento.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, depois de deixar o quarto. ✅ | <strong>B)</strong> Não, já tirei a bata. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">🔟 Antes de ajudar o paciente a mudar de posição na cama.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes do contato direto. ✅ | <strong>B)</strong> Não, não há risco de contaminação. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">11️⃣ Após espirrar ou tossir, mesmo usando máscara.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, imediatamente depois. ✅ | <strong>B)</strong> Não, usei máscara. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">12️⃣ Antes de preparar uma bandeja com seringas e medicação oral.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes da manipulação. ✅ | <strong>B)</strong> Não, já higienizei hoje. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">13️⃣ Depois de tocar na cama, grades ou mesa do paciente.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, após contato com superfícies próximas. ✅ | <strong>B)</strong> Não, não toquei no paciente. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">14️⃣ Antes de avaliar o curativo cirúrgico de um paciente.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes do contato direto. ✅ | <strong>B)</strong> Não, o curativo está limpo. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">15️⃣ Após colocar compressas usadas no lixo hospitalar.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, após contato com material contaminado. ✅ | <strong>B)</strong> Não, usei pinça. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">16️⃣ Antes de inserir um cateter venoso periférico.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de procedimento asséptico. ✅ | <strong>B)</strong> Não, vou usar luvas. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">17️⃣ Depois de retirar o cateter venoso do paciente.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, após contato com sangue. ✅ | <strong>B)</strong> Não, o cateter estava limpo. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">18️⃣ Antes de manipular o ventilador mecânico.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes do contato com equipamento próximo ao paciente. ✅ | <strong>B)</strong> Não, o ventilador é estéril. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">19️⃣ Após atender vários pacientes consecutivos.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, entre cada paciente. ✅ | <strong>B)</strong> Não, apenas no final do turno. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">20️⃣ Após tocar em documentos e computador da enfermagem.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de novo contato com paciente. ✅ | <strong>B)</strong> Não, são superfícies limpas. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">21️⃣ Antes de colocar luvas para manipular secreções.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de calçar as luvas. ✅ | <strong>B)</strong> Não, as luvas bastam. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">22️⃣ Após ajudar paciente a assoar o nariz.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, após contato com secreções. ✅ | <strong>B)</strong> Não, limpei com lenço. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">23️⃣ Antes de trocar um curativo de ferida aberta.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes do procedimento. ✅ | <strong>B)</strong> Não, já fiz assepsia na bancada. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">24️⃣ Após tocar no cabelo ou rosto durante o plantão.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de retomar o atendimento. ✅ | <strong>B)</strong> Não, é um gesto inofensivo. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">25️⃣ Antes de colocar máscara cirúrgica.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de ajustar o EPI. ✅ | <strong>B)</strong> Não, as mãos estão visivelmente limpas. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">26️⃣ Após retirar a máscara cirúrgica.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, imediatamente depois. ✅ | <strong>B)</strong> Não, a máscara protegeu. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">27️⃣ Antes de preparar uma solução intravenosa.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes da manipulação de medicação. ✅ | <strong>B)</strong> Não, não tocarei diretamente. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">28️⃣ Após ajudar o paciente a usar o urinol.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, depois do contato com fluidos. ✅ | <strong>B)</strong> Não, estava de luvas. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">29️⃣ Antes de entrar no quarto de isolamento com o carrinho de medicação.</div>
+                    <div class="question-options"><strong>A)</strong> Sim, antes de cruzar o ambiente. ✅ | <strong>B)</strong> Não, não tocaria em nada. ❌</div>
+                </div>
+                <div class="question-item">
+                    <div class="question-text">30️⃣ Após retirar os equipamentos de proteção individual (EPI).</div>
+                    <div class="question-options"><strong>A)</strong> Sim, como última etapa de segurança. ✅ | <strong>B)</strong> Não, o EPI já evitou contaminação. ❌</div>
+                </div>
             </div>
         </div>
     </div>

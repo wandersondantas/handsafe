@@ -146,6 +146,14 @@ function confirmarHigienizacao(higienizou) {
     mostrarDashboard();
 }
 
+function abrirMiniJogoModal() {
+    document.getElementById('miniGameModal').style.display = 'block';
+}
+
+function fecharMiniJogoModal() {
+    document.getElementById('miniGameModal').style.display = 'none';
+}
+
 function mostrarDashboard() {
     document.getElementById('loginSection').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
@@ -236,6 +244,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('password').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             tentarLogin();
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        const miniGameModal = document.getElementById('miniGameModal');
+        const hygieneModal = document.getElementById('hygieneModal');
+
+        if (event.target === miniGameModal) {
+            fecharMiniJogoModal();
+        }
+
+        if (event.target === hygieneModal) {
+            hygieneModal.style.display = 'none';
         }
     });
 });

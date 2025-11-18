@@ -30,6 +30,18 @@ body {
     text-align: center;
 }
 
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    max-width: 200px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
 .header h1 {
     font-size: 28px;
     margin-bottom: 10px;
@@ -560,6 +572,11 @@ input:focus, select:focus {
 }
 
 @media (max-width: 768px) {
+    .logo-image {
+        max-width: 150px;
+        max-height: 60px;
+    }
+
     .modal-content {
         margin: 20px auto;
         padding: 30px 20px;
@@ -573,6 +590,11 @@ input:focus, select:focus {
     .user-info {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
+    }
+
+    .mini-game-banner {
+        flex-direction: column;
         text-align: center;
     }
 }

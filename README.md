@@ -11,6 +11,14 @@ Integrar lembretes de higienização das mãos no momento do login em sistemas e
 
 ## 🚀 Como Usar
 
+### Configuração Inicial
+1. Coloque o arquivo `logo.png` na mesma pasta dos arquivos HTML, CSS e JS
+2. Certifique-se de que todos os arquivos estão na mesma pasta:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+   - `logo.png`
+
 ### Abrir o Sistema
 1. Navegue até à pasta do projeto
 2. Abra o arquivo `index.html` num navegador web (Chrome, Firefox, Edge, Safari)
@@ -29,6 +37,16 @@ O sistema possui 5 utilizadores pré-cadastrados:
 
 ## 💡 Funcionalidades
 
+### 🎨 Personalização da Marca
+- Logo personalizado exibido no cabeçalho
+- Design responsivo que se adapta a diferentes tamanhos de tela
+- Logo otimizado para visualização em dispositivos móveis
+
+### 🔐 Login Simplificado
+- Interface de login limpa com apenas username e password
+- Validação de credenciais em tempo real
+- Mensagens de erro claras e informativas
+
 ### ✅ Check-in Obrigatório
 - Modal automático ao fazer login
 - Pergunta: "Você higienizou as mãos nos últimos 30 minutos?"
@@ -44,6 +62,12 @@ O sistema possui 5 utilizadores pré-cadastrados:
 - Registo de todos os check-ins
 - Timestamp de cada evento
 - Identificação visual (✅ confirmado / ❌ não confirmado)
+
+### 🎮 Minijogo Educativo
+- 30 situações clínicas para revisão
+- Feedback imediato sobre respostas
+- Histórico completo de progresso
+- Sistema de pontuação
 
 ### ⚠️ Sistema de Alertas
 - Banner de aviso quando não confirma higienização
@@ -71,6 +95,12 @@ O sistema possui 5 utilizadores pré-cadastrados:
 2. Demonstrar históricos independentes
 3. Mostrar rastreabilidade individual
 
+### Cenário 4: Minijogo Educativo
+1. Fazer login com qualquer utilizador
+2. Clicar no banner do minijogo
+3. Responder às 30 situações clínicas
+4. Visualizar histórico e pontuação
+
 ## 🔧 Tecnologias Utilizadas
 
 - HTML5
@@ -85,6 +115,16 @@ O sistema possui 5 utilizadores pré-cadastrados:
 - ✅ Smartphone
 - ✅ Todos os navegadores modernos
 
+## 🎨 Personalização
+
+### Como Trocar o Logo
+1. Substitua o arquivo `logo.png` pelo seu logo
+2. Recomendações:
+   - Formato: PNG com fundo transparente
+   - Dimensões recomendadas: 400x160 pixels (proporção 5:2)
+   - Tamanho máximo de exibição: 200x80 pixels (desktop) / 150x60 pixels (mobile)
+   - O sistema ajustará automaticamente o tamanho mantendo a proporção
+
 ## 📚 Fundamentação Científica
 
 ### Por que funciona?
@@ -92,18 +132,34 @@ O sistema possui 5 utilizadores pré-cadastrados:
 - **Obrigatoriedade**: Não é possível ignorar o aviso
 - **Rastreabilidade**: Permite identificar padrões e áreas de melhoria
 - **Feedback imediato**: Profissional vê o impacto das suas ações
+- **Gamificação**: Minijogo reforça conhecimento de forma lúdica
 
 ### Benefícios Esperados
 - ⬆️ Aumento da adesão à higienização das mãos
 - ⬇️ Redução de infeções associadas aos cuidados de saúde (IACS)
 - 📊 Dados para auditorias e melhoria contínua
 - 🎯 Intervenções direcionadas por serviço/profissional
+- 🎓 Educação contínua através do minijogo
 
 ## 📖 Referências
 
 - Singapore General Hospital (2022) - Experiência piloto de check-in digital
 - OMS - Diretrizes sobre Higienização das Mãos nos Cuidados de Saúde
 - DGS Portugal - Programa de Prevenção e Controlo de Infeções
+
+## 📝 Changelog
+
+### Versão 18/11/2024
+- ✅ Adicionado suporte para logo personalizado
+- ✅ Simplificado login (removido campo "Nome do Profissional")
+- ✅ Login apenas com username e password
+- ✅ Design responsivo do logo
+- ✅ Melhorias na experiência mobile
+
+### Versão 17/11/2024
+- ✅ Implementado minijogo com 30 situações clínicas
+- ✅ Sistema de pontuação e histórico de respostas
+- ✅ Banner de acesso ao minijogo no dashboard
 
 ## 👥 Créditos
 
